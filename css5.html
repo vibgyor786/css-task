@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Horizontal Navigation Bar
+    </title>
+    <style>
+        * {
+
+            margin: 0;
+
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+
+            position: sticky;
+            align-items: center;
+            justify-content: center;
+            top: 0px;
+
+
+            cursor: pointer;
+        }
+
+        .nav-list {
+            width: 50%;
+            display: flex;
+        }
+
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+            border: 1px solid blue;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-list>li:hover {
+            background-color: rgb(20, 19, 19);
+        }
+
+        .rightNav {
+            width: 50%;
+            text-align: right;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.4);
+            background-blend-mode: darken;
+            background-size: cover;
+            display: flex;
+            justify-content: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar background">
+
+        <ul class="nav-list">
+            <li><a href="#Car">Home</a></li>
+            <li><a href="#file">Java</a></li>
+            <li><a href="#file">Html</a></li>
+            <li><a href="#file">Css</a></li>
+        </ul>
+
+
+    </nav>
+</body>
+
+</html>
